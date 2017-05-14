@@ -158,7 +158,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public boolean isVerifyCode(String verifyCode, String serverVerifyCode) {
-        return serverVerifyCode.equals(verifyCode);
+        return verifyCode.toLowerCase().equals(serverVerifyCode);
     }
 
     /**
@@ -170,7 +170,7 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public boolean isEmailCode(String emailCode, String serverEmailCode) {
-        return emailCode.equals(serverEmailCode);
+        return emailCode.toLowerCase().equals(serverEmailCode);
     }
 
     /**
