@@ -45,7 +45,7 @@
         <include refid="Base_Column_List"/>
         from user
         where email = #{email,jdbcType=VARCHAR} and password = #{password,jdbcType=VARCHAR}
-        and  permission = #{permission,jdbcType=BIGINT}
+        and permission = #{permission,jdbcType=BIGINT}
     </select>
 
     <select id="selectByEmail" resultMap="BaseResultMap" parameterType="java.lang.String">

@@ -2,11 +2,10 @@ package cn.edu.hlju.tour.core.impl;
 
 import cn.edu.hlju.tour.common.utils.UploadUtils;
 import cn.edu.hlju.tour.core.SpotService;
-import cn.edu.hlju.tour.dao.SpotCommentMapper;
-import cn.edu.hlju.tour.dao.SpotImgMapper;
-import cn.edu.hlju.tour.dao.SpotMapper;
-import cn.edu.hlju.tour.dao.UserMapper;
-import cn.edu.hlju.tour.entity.*;
+import cn.edu.hlju.tour.dao.*;
+import cn.edu.hlju.tour.entity.Spot;
+import cn.edu.hlju.tour.entity.SpotComment;
+import cn.edu.hlju.tour.entity.User;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -30,6 +29,9 @@ public class SpotServiceImpl implements SpotService {
 
     @Autowired
     private SpotCommentMapper spotCommentMapper;
+
+    @Autowired
+    private PathMapper pathMapper;
 
     @Autowired
     private UserMapper userMapper;
@@ -137,11 +139,19 @@ public class SpotServiceImpl implements SpotService {
 
         //删除景点
         spotMapper.delBySpotId(ids);
+
+        //删除路径
+        pathMapper.delBySpotId(ids);
+
     }
 
     @Override
+    @Transactional
     public void addSpot(Spot spot) {
         spotMapper.insertSelective(spot);
+        //添加路径
+        List<Spot> list = this.getAllSpot();
+
     }
 
     /**

@@ -141,11 +141,51 @@
             color: #999;
         }
 
-        .loc-map {
+        .mapAndPath {
             margin-top: 20px;
-            width: 500px;
+            width: 100%;
             height: 250px;
             margin-bottom: 20px;
+        }
+
+        .loc-map {
+            width: 500px;
+            height: 250px;
+            float: left;
+        }
+
+        .spot-container {
+            width: 220px;
+            height: 250px;
+            margin-left: 20px;
+            float: left;
+            text-align: center;
+        }
+
+        .spot-container .panel-body, .path-container .panel-body {
+            height: 83%;
+            overflow: scroll;
+            color: #666;
+        }
+
+        .spot-container .panel {
+            height: 30px;
+            margin-bottom: 10px;
+            padding-top: 5px;
+        }
+
+        .spot-container .panel:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .path-container {
+            width: 220px;
+            height: 250px;
+            margin-left: 20px;
+            float: left;
+            text-align: center;
+            display: none;
         }
 
         .footer {
@@ -159,6 +199,7 @@
         $(function () {
 
             initHeadAddr();
+            ajaxAllSpotName();
             spotBtnClick();
             ajaxFirstComment();
             addCommentBtnClick();
@@ -174,10 +215,71 @@
         }
 
         /**
+         * 加载除本景点之外的所有景点
+         */
+        function ajaxAllSpotName() {
+            $.ajax({
+                type: "POST",
+                url: "/tour/getAllSpot",
+                async: true,
+                success: function(data) {
+                    $('.spot-content').empty();
+                    var inner = "";
+                    var spotId = $('#spotid').val();
+                    for (var i = 0; i<data.length; i++) {
+                        if (data[i].id != spotId) {
+                            inner += "<div class='panel path'>" +
+                                        "<input type='hidden' value=" + data[i].id + " />" +
+                                        "<span>" + data[i].spotName + "</span>" +
+                                     "</div>";
+                        }
+                    }
+                    $('.spot-content').append(inner);
+                    pathClick();
+                }
+            });
+        }
+
+        /**
+         * 绑定点击景点查询路线的事件
+         */
+        function pathClick() {
+            $('.path').each(function(i) {
+                $(this).click(function() {
+                    var fromSid = $('#spotid').val();
+                    var toSid = $(this).find('input').val();
+                    $.ajax({
+                        type: "POST",
+                        url: "/tour/path",
+                        data: {"fromSid": fromSid, "toSid": toSid},
+                        async: true,
+                        success: function(data) {
+                            if (data.length == 0) {
+                                $('.path-content').html('暂无此路线');
+                            } else {
+                                $('.path-content').empty();
+                                var inner = "";
+                                for (var i = 0; i<data.length; i++) {
+                                    if ( i == data.length-1) {
+                                        inner += data[i].spotName;
+                                    } else {
+                                        inner += data[i].spotName + " <span class='glyphicon glyphicon-arrow-right'></span> ";
+                                    }
+                                }
+                                $('.path-content').append(inner);
+                                $('.path-container').slideDown();
+                            }
+                        }
+                    });
+                });
+            });
+        }
+
+        /**
          * 景点查询按钮
          */
         function spotBtnClick() {
-            $('#spotbtn').click(function() {
+            $('#spotbtn').click(function () {
                 var spotname = $.trim($('#spotname').val());
                 if (validateSpot()) {
                     $.ajax({
@@ -185,7 +287,7 @@
                         url: "/tour/haveSpot",
                         data: {"spotname": spotname},
                         async: true,
-                        success: function(data) {
+                        success: function (data) {
                             if (data == "success") {
                                 location.href = "spotByName";
                             }
@@ -203,9 +305,9 @@
         /**
          * 验证输入
          */
-        function validateSpot () {
+        function validateSpot() {
             var spotname = $.trim($('#spotname').val());
-            if (spotname  == null || spotname == '') {
+            if (spotname == null || spotname == '') {
                 $('.tip').html("客官，请输入景点名字");
                 $('#modal').modal('show');
                 $('#spotname').val("");
@@ -217,7 +319,7 @@
         /**
          * 获取第一页comment
          */
-         function ajaxFirstComment() {
+        function ajaxFirstComment() {
             $.ajax({
                 type: "POST",
                 url: "/tour/spotComment",
@@ -239,16 +341,16 @@
             for (var i = 0; i < maplist.length; i++) {
                 var newDate = new Date(maplist[i].comment.time);
                 comment += "<div class='media'>" +
-                                "<div class='media-left '>" +
-                                    "<img src='" + maplist[i].user.avatar + "' class='img-circle'>" +
-                                "</div>" +
-                                "<div class='media-body'>" +
-                                    "<h5 class='media-heading'>" + maplist[i].user.nick + "</h5>" + maplist[i].comment.content +
-                                    "<div class='comment-time-div'>" +
-                                        "<div class='comment-time'>" + newDate.toLocaleString() + "</div>" +
-                                    "</div>" +
-                                "</div>" +
-                            "</div>";
+                        "<div class='media-left '>" +
+                        "<img src='" + maplist[i].user.avatar + "' class='img-circle'>" +
+                        "</div>" +
+                        "<div class='media-body'>" +
+                        "<h5 class='media-heading'>" + maplist[i].user.nick + "</h5>" + maplist[i].comment.content +
+                        "<div class='comment-time-div'>" +
+                        "<div class='comment-time'>" + newDate.toLocaleString() + "</div>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>";
             }
             $('.comment-body').empty();
             $('.comment-body').append(comment);
@@ -295,10 +397,10 @@
          * 分页按钮绑定事件
          */
         function pageClick() {
-            $('.pager a').each(function(i) {
+            $('.pager a').each(function (i) {
                 $(this).off('click');
                 if ($(this).parent().attr('class') != 'disabled') {
-                    $(this).click(function() {
+                    $(this).click(function () {
                         var pageNum = $(this).attr('value');
                         $.ajax({
                             type: "POST",
@@ -399,74 +501,84 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <c:forEach items="${json.spotImg}" var="spotImg" varStatus="i">
-                    <c:if test="${i.index == 0}" >
-                        <div class='item active'>
+                <c:if test="${i.index == 0}">
+                <div class='item active'>
                     </c:if>
-                    <c:if test="${i.index != 0}" >
-                        <div class='item'>
-                    </c:if>
+                    <c:if test="${i.index != 0}">
+                    <div class='item'>
+                        </c:if>
                         <img src='${spotImg.img}' alt=''>
-                        </div>
-                </c:forEach>
+                    </div>
+                    </c:forEach>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
         </div>
+
+        <div class="addr-intro">
+            ${json.spot.spotIntroduce}
+        </div>
+
+        <div class="addr-help">
+            <div class="help-title">用时参考</div>
+            <div class="help-body">${json.spot.spendTime}</div>
+            <div class="help-title">交通</div>
+            <div class="help-body">${json.spot.traffic}</div>
+            <div class="help-title">门票</div>
+            <div class="help-body">${json.spot.ticket}</div>
+            <div class="help-title">开放时间</div>
+            <div class="help-body">${json.spot.openTime}</div>
+        </div>
+
+        <div class="addr-loc">
+            <div class="loc-title">景点位置</div>
+            <div class="loc-body">${json.spot.location}</div>
+            <div class="mapAndPath">
+                <div id="mapContainer" class="loc-map"></div>
+                <div class="spot-container panel panel-info">
+                    <div class="panel-heading">景点 - 查看游玩路线</div>
+                    <div class="panel-body spot-content"></div>
+                </div>
+                <div class="path-container panel panel-success">
+                    <div class="panel-heading">最短游玩路线</div>
+                    <div class="panel-body path-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript"
+                src="http://webapi.amap.com/maps?v=1.3&key=368a175838176615ee0513371b307c44"></script>
+        <script type="text/javascript">
+            var coordinate = "${json.spot.coordinate}";
+            var array = coordinate.substring(1, coordinate.length - 1).split(",");
+            var x = array[0];
+            var y = array[1];
+            var map = new AMap.Map('mapContainer', {
+                zoom: 14,
+                mapStyle: 'normal',
+                center: [x, y]
+            });
+            var marker = new AMap.Marker({
+                position: [x, y],//marker所在的位置
+                map: map//创建时直接赋予map属性
+            });
+            AMap.plugin(['AMap.ToolBar', 'AMap.Scale'], function () {
+                map.addControl(new AMap.ToolBar());
+                map.addControl(new AMap.Scale());
+            });
+        </script>
+
     </div>
 
-    <div class="addr-intro">
-        ${json.spot.spotIntroduce}
-    </div>
+    <%@ include file="/comment.jsp" %>
 
-    <div class="addr-help">
-        <div class="help-title">用时参考</div>
-        <div class="help-body">${json.spot.spendTime}</div>
-        <div class="help-title">交通</div>
-        <div class="help-body">${json.spot.traffic}</div>
-        <div class="help-title">门票</div>
-        <div class="help-body">${json.spot.ticket}</div>
-        <div class="help-title">开放时间</div>
-        <div class="help-body">${json.spot.openTime}</div>
-    </div>
-
-    <div class="addr-loc">
-        <div class="loc-title">景点位置</div>
-        <div class="loc-body">${json.spot.location}</div>
-        <div id="mapContainer" class="loc-map"></div>
-    </div>
-
-    <script type="text/javascript"
-            src="http://webapi.amap.com/maps?v=1.3&key=368a175838176615ee0513371b307c44"></script>
-    <script type="text/javascript">
-        var coordinate = "${json.spot.coordinate}";
-        var array = coordinate.substring(1, coordinate.length - 1).split(",");
-        var x = array[0];
-        var y = array[1];
-        var map = new AMap.Map('mapContainer', {
-            zoom: 14,
-            mapStyle: 'normal',
-            center: [x, y]
-        });
-        var marker = new AMap.Marker({
-            position: [x, y],//marker所在的位置
-            map: map//创建时直接赋予map属性
-        });
-        AMap.plugin(['AMap.ToolBar', 'AMap.Scale'], function () {
-            map.addControl(new AMap.ToolBar());
-            map.addControl(new AMap.Scale());
-        });
-    </script>
-
-</div>
-
-<%@ include file="/comment.jsp" %>
-
-<div class="footer"></div>
+    <div class="footer"></div>
 
 </body>
 </html>

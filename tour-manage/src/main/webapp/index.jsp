@@ -224,6 +224,12 @@
                 </ul>
             </div>
 
+            <div title="路线管理" style="overflow:auto">
+                <ul>
+                    <li><a title="jsp/path.jsp" class="easyui-linkbutton">路线列表</a></li>
+                </ul>
+            </div>
+
             <div title="游记审核" style="overflow:auto">
                 <ul>
                     <li><a title="jsp/travel.jsp" class="easyui-linkbutton">待审核游记列表</a></li>
@@ -244,36 +250,36 @@
 
 </div>
 
-<div id="loginModal" class="easyui-window">
+<%--<div id="loginModal" class="easyui-window">--%>
 
-    <form id="form">
+    <%--<form id="form">--%>
 
-    <div id="tipDiv">
-        <span id="tip-content"></span>
-    </div>
+    <%--<div id="tipDiv">--%>
+        <%--<span id="tip-content"></span>--%>
+    <%--</div>--%>
 
-    <div style="margin-bottom:10px">
-        <input id="email" name="email" type="text" placeholder="登录邮箱" />
-    </div>
+    <%--<div style="margin-bottom:10px">--%>
+        <%--<input id="email" name="email" type="text" placeholder="登录邮箱" />--%>
+    <%--</div>--%>
 
-    <div style="margin-bottom:10px">
-        <input id="password" name="password" type="password" placeholder="密码" />
-    </div>
+    <%--<div style="margin-bottom:10px">--%>
+        <%--<input id="password" name="password" type="password" placeholder="密码" />--%>
+    <%--</div>--%>
 
-    <div style="margin-bottom:10px;">
-        <input type="text" id="verifyCode" placeholder="验证码" name="verifyCode" />
-        <img id="verifyCodeImg" src="verifyCode" />
-    </div>
+    <%--<div style="margin-bottom:10px;">--%>
+        <%--<input type="text" id="verifyCode" placeholder="验证码" name="verifyCode" />--%>
+        <%--<img id="verifyCodeImg" src="verifyCode" />--%>
+    <%--</div>--%>
 
-    </form>
+    <%--</form>--%>
 
-    <div style="float: right">
-        <a href="javascript:void(0);" class="easyui-linkbutton" id="signIn">
-            <span>登录</span>
-        </a>
-    </div>
+    <%--<div style="float: right">--%>
+        <%--<a href="javascript:void(0);" class="easyui-linkbutton" id="signIn">--%>
+            <%--<span>登录</span>--%>
+        <%--</a>--%>
+    <%--</div>--%>
 
-</div>
+<%--</div>--%>
 
 </body>
 

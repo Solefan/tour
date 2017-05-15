@@ -94,7 +94,7 @@
         from travel
         <where>
             <if test="id != null" >
-                and id = #{id,jdbcType=BIGINT}
+                id = #{id,jdbcType=BIGINT}
             </if>
             <if test="title != null">
                 and title like concat('%', concat(#{title, jdbcType=VARCHAR}, '%'))

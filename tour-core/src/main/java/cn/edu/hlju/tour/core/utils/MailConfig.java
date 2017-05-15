@@ -11,7 +11,7 @@ public class MailConfig {
     private String senderPassword;
 
     // 发件人邮箱的 SMTP 服务器地址, 必须准确, 不同邮件服务器地址不同, 一般格式为: smtp.xxx.com
-    // 网易163邮箱的 SMTP 服务器地址为: smtp.163.com
+    // QQ邮箱的 SMTP 服务器地址为: smtp.qq.com
     private String senderEmailSMTPHost;
 
     private String smtpAuth;

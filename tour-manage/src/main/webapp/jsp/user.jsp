@@ -129,7 +129,7 @@
                 for (var i = 0; i < arr.length; i++) {
                     ids += arr[i].id + ',';
                 }
-                ids = ids.substring(0, ids.length - 1);
+                ids = ids.substring(0, ids.length - 1); //去掉逗号
                 $.messager.confirm('提示信息', '确认删除？', function (r) {
                     if (r) {
                         $.ajax({

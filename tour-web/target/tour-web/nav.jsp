@@ -159,7 +159,7 @@
     </div>
 </div>
 
-<!-- 登录窗口 -->
+<!-- 登录窗口  jquery modal 插件-->
 <div class="login-modal">
 
     <div class="login-close">
