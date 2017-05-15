@@ -151,14 +151,14 @@ public class SpotServiceImpl implements SpotService {
     public void addSpot(Spot spot) {
         List<Spot> list = this.getAllSpot();
         //添加景点
-        int spotId = spotMapper.insertSelective(spot);
+        Long spotId = spotMapper.insertSelective(spot);
 
         if (list.size() != 0) {
             //添加路径， 初始化都不可直达
             List<Path> listPath = new ArrayList<>();
             for (Spot s : list) {
-                listPath.add(new Path(new Long(spotId), s.getId(), "-1"));
-                listPath.add(new Path(s.getId(), new Long(spotId), "-1"));
+                listPath.add(new Path(spotId, s.getId(), "-1"));
+                listPath.add(new Path(s.getId(), spotId, "-1"));
             }
             pathMapper.insertBatch(listPath);
         }

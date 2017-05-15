@@ -339,7 +339,7 @@
             </tr>
 
             <tr>
-                <td>花费时间:</td>
+                <td>用时参考:</td>
                 <td><input id="spendTime" type="text" name="spendTime" value="" style="width:200px" /></td>
             </tr>
 
