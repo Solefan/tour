@@ -181,6 +181,12 @@
                     });
                     return;
                 }
+
+                //移除disable,后台方可取值
+                $("[disabled]").each(function() {
+                    $(this).attr("disabled", false);
+                });
+
                 $.ajax({
                     type: "POST",
                     url: "/manage/editPath",
@@ -194,6 +200,20 @@
                             title: '提示信息',
                             msg: '操作成功！'
                         });
+                        $("#fromSid").attr("disabled", true);
+                        $("#toSid").attr("disabled", true);
+                    },
+                    error: function (data) {
+                        //关闭窗口
+                        $("#mydialog").dialog('close');
+                        //刷新datagrid
+                        $("#t_path").datagrid('reload');
+                        $.messager.show({
+                            title: '提示信息',
+                            msg: '操作失败！'
+                        });
+                        $("#fromSid").attr("disabled", true);
+                        $("#toSid").attr("disabled", true);
                     }
                 });
             });
