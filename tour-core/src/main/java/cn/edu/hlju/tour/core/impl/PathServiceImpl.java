@@ -8,6 +8,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -32,6 +33,7 @@ public class PathServiceImpl implements PathService {
     }
 
     @Override
+    @Transactional
     public void update(Path path) {
         //更新第一条路径
         pathMapper.updateByPrimaryKeySelective(path);
