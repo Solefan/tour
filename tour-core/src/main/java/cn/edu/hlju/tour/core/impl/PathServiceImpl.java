@@ -33,7 +33,20 @@ public class PathServiceImpl implements PathService {
 
     @Override
     public void update(Path path) {
+        //更新第一条路径
         pathMapper.updateByPrimaryKeySelective(path);
+
+        //更新第二条路径
+        // 1. 根据from and to  查出另一条路线
+        // 2. 获取该路线并更新路径长度
+        Path pathTemp = new Path();
+        pathTemp.setFromSid(path.getToSid());
+        pathTemp.setToSid(path.getFromSid());
+        List<Path> list = pathMapper.selectByPath(pathTemp);
+        pathTemp = list.get(0);
+        pathTemp.setDistance(path.getDistance());
+        pathMapper.updateByPrimaryKeySelective(pathTemp);
+
     }
 
 }

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.hlju.tour.dao.PathMapper">
+    <resultMap id="BaseResultMap" type="cn.edu.hlju.tour.entity.Path">
+        <constructor>
+            <idArg column="id" jdbcType="BIGINT" javaType="java.lang.Long"/>
+            <arg column="from_sid" jdbcType="BIGINT" javaType="java.lang.Long"/>
+            <arg column="to_sid" jdbcType="BIGINT" javaType="java.lang.Long"/>
+            <arg column="distance" jdbcType="VARCHAR" javaType="java.lang.String"/>
+        </constructor>
+    </resultMap>
+    <sql id="Base_Column_List">
+      id, from_sid, to_sid, distance
+    </sql>
+
+    <delete id="delBySpotId" parameterType="long[]">
+        delete from path where from_sid in
+        <foreach collection="array" open="(" item="id" separator=", " close=")">
+            #{id, jdbcType=BIGINT}
+        </foreach>
+        or to_sid in
+        <foreach collection="array" open="(" item="id" separator=", " close=")">
+            #{id, jdbcType=BIGINT}
+        </foreach>
+    </delete>
+
+    <select id="selectByPath" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from path
+        <where>
+            <if test="fromSid != null">
+                from_sid = #{fromSid, jdbcType=BIGINT}
+            </if>
+            <if test="toSid != null">
+                and to_sid = #{toSid, jdbcType=BIGINT}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from path order by from_sid asc, to_sid asc
+    </select>
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select
+        <include refid="Base_Column_List"/>
+        from path
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+        delete from path
+        where id = #{id,jdbcType=BIGINT}
+    </delete>
+
+    <insert id="insert" parameterType="cn.edu.hlju.tour.entity.Path">
+        insert into path (id, from_sid, to_sid,
+          distance)
+        values (#{id,jdbcType=BIGINT}, #{fromSid,jdbcType=BIGINT}, #{toSid,jdbcType=BIGINT},
+          #{distance,jdbcType=VARCHAR})
+    </insert>
+
+    <insert id="insertBatch" >
+        insert into path (id, from_sid, to_sid,
+        distance)
+        values
+        <foreach collection="list" item="path" separator=", " >
+            (#{path.id,jdbcType=BIGINT}, #{path.fromSid,jdbcType=BIGINT}, #{path.toSid,jdbcType=BIGINT},
+            #{path.distance,jdbcType=VARCHAR})
+        </foreach>
+    </insert>
+
+    <insert id="insertSelective" parameterType="cn.edu.hlju.tour.entity.Path">
+        insert into path
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="fromSid != null">
+                from_sid,
+            </if>
+            <if test="toSid != null">
+                to_sid,
+            </if>
+            <if test="distance != null">
+                distance,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="fromSid != null">
+                #{fromSid,jdbcType=BIGINT},
+            </if>
+            <if test="toSid != null">
+                #{toSid,jdbcType=BIGINT},
+            </if>
+            <if test="distance != null">
+                #{distance,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="cn.edu.hlju.tour.entity.Path">
+        update path
+        <set>
+            <if test="fromSid != null">
+                from_sid = #{fromSid,jdbcType=BIGINT},
+            </if>
+            <if test="toSid != null">
+                to_sid = #{toSid,jdbcType=BIGINT},
+            </if>
+            <if test="distance != null">
+                distance = #{distance,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="cn.edu.hlju.tour.entity.Path">
+    update path
+    set from_sid = #{fromSid,jdbcType=BIGINT},
+      to_sid = #{toSid,jdbcType=BIGINT},
+      distance = #{distance,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

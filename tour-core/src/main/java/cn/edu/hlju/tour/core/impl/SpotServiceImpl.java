@@ -3,6 +3,7 @@ package cn.edu.hlju.tour.core.impl;
 import cn.edu.hlju.tour.common.utils.UploadUtils;
 import cn.edu.hlju.tour.core.SpotService;
 import cn.edu.hlju.tour.dao.*;
+import cn.edu.hlju.tour.entity.Path;
 import cn.edu.hlju.tour.entity.Spot;
 import cn.edu.hlju.tour.entity.SpotComment;
 import cn.edu.hlju.tour.entity.User;
@@ -148,10 +149,16 @@ public class SpotServiceImpl implements SpotService {
     @Override
     @Transactional
     public void addSpot(Spot spot) {
-        spotMapper.insertSelective(spot);
-        //添加路径
         List<Spot> list = this.getAllSpot();
-
+        //添加景点
+        int spotId = spotMapper.insertSelective(spot);
+        //添加路径， 初始化都不可直达
+        List<Path> listPath = new ArrayList<>();
+        for (Spot s : list) {
+            listPath.add(new Path(new Long(spotId), s.getId(), "-1"));
+            listPath.add(new Path(s.getId(), new Long(spotId), "-1"));
+        }
+        pathMapper.insertBatch(listPath);
     }
 
     /**
