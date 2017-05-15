@@ -8,15 +8,12 @@
     <title>途悠游</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="resources/css/daterangepicker.min.css"/>
 
     <script src="resources/js/jquery.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/holder.min.js"></script>
 
     <script src="resources/js/moment.min.js" type="text/javascript"></script>
-    <script src="resources/js/jquery.daterangepicker.min.js"></script>
-    <script src="resources/js/date.js"></script>
 
     <style>
 
@@ -42,11 +39,11 @@
             padding: 1% 2%;
         }
 
-        .addr-div, .hotel-div {
+        .addr-div {
             margin-bottom: 50px;
         }
 
-        .a-title, .h-title, .f-title {
+        .a-title, .f-title {
             color: #ff9d00;
             font-size: 20px;
             font-weight: 400;
@@ -206,14 +203,19 @@
     <script>
         $(function () {
 
+            //更新导航栏
             initHeadIndex();
 
+            //加载游记
             ajaxTravels();
 
+            //点击换一批按钮点击事件
             refreshBtnClick();
 
+            //查询景点按钮点击事件
             spotBtnClick();
 
+            //查询航班按钮点击事件
             flightBtnClick();
 
         });
@@ -244,7 +246,7 @@
          * 换一批按钮点击事件
          */
         function refreshBtnClick() {
-            $('#refreshbtn').click(function() {
+            $('#refreshBtn').click(function() {
                 $.ajax({
                     type: "POST",
                     url: "/tour/refresh",
@@ -295,13 +297,13 @@
          * 景点查询按钮点击事件
          */
         function spotBtnClick() {
-            $('#spotbtn').click(function() {
-                var spotname = $.trim($('#spotname').val());
+            $('#spotBtn').click(function() {
+                var spotName = $.trim($('#spotName').val());
                 if (validateSpot()) {
                     $.ajax({
                         type: "POST",
                         url: "/tour/haveSpot",
-                        data: {"spotname": spotname},
+                        data: {"spotName": spotName},
                         async: true,
                         success: function(data) {
                             if (data == "success") {
@@ -322,7 +324,7 @@
          * 航班查询按钮点击事件
          */
         function flightBtnClick() {
-            $('#flightbtn').click(function() {
+            $('#flightBtn').click(function() {
                 var from = $.trim($('#from').val());
                 var to = $.trim($('#to').val());
                 if (validateFlight()) {
@@ -353,11 +355,11 @@
          * @returns {boolean}
          */
         function validateSpot () {
-            var spotname = $.trim($('#spotname').val());
-            if (spotname  == null || spotname == '') {
+            var spotName = $.trim($('#spotName').val());
+            if (spotName  == null || spotName == '') {
                 $('.tip').html("客官，请输入景点名字");
                 $('#modal').modal('show');
-                $('#spotname').val("");
+                $('#spotName').val("");
                 return false;
             }
             return true;
@@ -387,7 +389,7 @@
         }
 
         /**
-         * 根据数据拼装FlightBody
+         * 根据后台返回数据拼装FlightBody
          * private
          * @param data
          */
@@ -454,34 +456,15 @@
 <div class="content-container">
 
     <div class="left-div">
+
         <div class="addr-div">
             <div class="a-title">景点</div>
             <div>
                 <div class="row">
                     <div class="form-group col-lg-8">
-                        <input type="text" class="form-control" id="spotname" placeholder="景点" name="spotname"/>
+                        <input type="text" class="form-control" id="spotName" placeholder="出行目的地" />
                     </div>
-                    <button id="spotbtn" type="button" class="btn btn-warning btn-style col-lg-3">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="hotel-div">
-            <div class="h-title">酒店</div>
-            <div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="" placeholder="出行目的地"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="date" placeholder="居住时间段"/>
-                </div>
-                <div class="row">
-                    <div class="form-group col-lg-8">
-                        <input type="text" class="form-control" id="" placeholder="人数"/>
-                    </div>
-                    <button type="button" class="btn btn-warning btn-style col-lg-3">
+                    <button id="spotBtn" type="button" class="btn btn-warning btn-style col-lg-3">
                         <span class="glyphicon glyphicon-search"></span>
                     </button>
                 </div>
@@ -498,7 +481,7 @@
                     <div class="form-group col-lg-8">
                         <input type="text" class="form-control" id="to" placeholder="到达城市"/>
                     </div>
-                    <button id="flightbtn" type="button" class="btn btn-warning btn-style col-lg-3">
+                    <button id="flightBtn" type="button" class="btn btn-warning btn-style col-lg-3">
                         <span class="glyphicon glyphicon-plane"></span>
                     </button>
                 </div>
@@ -522,7 +505,7 @@
             旅行游记
         </div>
         <div class="col-lg-2" style="float: right">
-            <input type="button" id="refreshbtn" class="btn btn-default" value="换一批" />
+            <input type="button" id="refreshBtn" class="btn btn-default" value="换一批" />
         </div>
 
         <div class="travel-split"></div>

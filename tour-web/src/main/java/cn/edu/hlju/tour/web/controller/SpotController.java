@@ -23,13 +23,13 @@ public class SpotController {
 
     @RequestMapping(value = "haveSpot")
     @ResponseBody
-    public String haveSpot(String spotname) {
-        return spotService.haveSpot(spotname);
+    public String haveSpot(String spotName) {
+        return spotService.haveSpot(spotName);
     }
 
     @RequestMapping(value = "spotByName")
-    public String getSpot(String spotname, HttpServletRequest request) {
-        JSONObject json = spotService.spotByName(spotname);
+    public String getSpot(String spotName, HttpServletRequest request) {
+        JSONObject json = spotService.spotByName(spotName);
         request.setAttribute("json", json);
         return "forward:destination.jsp";
     }

@@ -116,13 +116,13 @@
                 $(this).find('a').html(content);
             });
 
-            $('#spotbtn').click(function() {
-                var spotname = $.trim($('#spotname').val());
+            $('#spotBtn').click(function() {
+                var spotName = $.trim($('#spotName').val());
                 if (validateSpot()) {
                     $.ajax({
                         type: "POST",
                         url: "/tour/haveSpot",
-                        data: {"spotname": spotname},
+                        data: {"spotName": spotName},
                         async: true,
                         success: function(data) {
                             if (data == "success") {
@@ -152,11 +152,11 @@
          * 验证输入
          */
         function validateSpot () {
-            var spotname = $.trim($('#spotname').val());
-            if (spotname  == null || spotname == '') {
+            var spotName = $.trim($('#spotName').val());
+            if (spotName  == null || spotName == '') {
                 $('.tip').html("客官，请输入景点名字");
                 $('#modal').modal('show');
-                $('#spotname').val("");
+                $('#spotName').val("");
                 return false;
             }
             return true;
@@ -172,10 +172,10 @@
 <div class="addr-search container">
     <div class="row">
         <div class="form-group col-lg-4">
-            <input type="text" class="form-control" id="spotname" placeholder="出行目的地" name="spotname"/>
+            <input type="text" class="form-control" id="spotName" placeholder="出行目的地" name="spotName"/>
         </div>
 
-        <button id="spotbtn" type="button" class="btn btn-warning btn-style">
+        <button id="spotBtn" type="button" class="btn btn-warning btn-style">
             <span class="glyphicon glyphicon-search"></span>
         </button>
     </div>

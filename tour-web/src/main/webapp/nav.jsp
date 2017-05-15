@@ -122,7 +122,7 @@
 <div class="header-content">
     <div class="header-wrap">
         <div class="head-logo">
-            <img src="holder.js/136x33" alt=""/>
+            <img src="resources/img/tu-uu.png" alt=""/>
         </div>
         <div class="head-nav">
             <a href="/tour">

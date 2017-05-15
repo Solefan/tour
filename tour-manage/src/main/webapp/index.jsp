@@ -64,8 +64,21 @@
     <script type="text/javascript">
         $(function() {
 
-            $("a[title]").click(function() {
+            initTab();
 
+            initLoginModal();
+
+            verifyCodeImgClick();
+
+            signInClick();
+
+        });
+
+        /**
+         * 点击列表出现tab
+         */
+        function initTab() {
+            $("a[title]").click(function() {
                 var src = $(this).attr("title");
                 var title = $(this).html();
                 if ($("#tabs").tabs('exists', title)) {
@@ -77,16 +90,8 @@
                         closable : true
                     });
                 }
-
             });
-
-            initLoginModal();
-
-            verifyCodeImgClick();
-
-            signInClick();
-
-        });
+        }
 
         /**
          * 初始化登录窗口

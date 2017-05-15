@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0aae1958-1b51-4aaa-a420-4b045a1c4d00" name="Default" comment="更新">
+    <list default="true" id="0aae1958-1b51-4aaa-a420-4b045a1c4d00" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/tu-uu.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/04.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/a1.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/Sole/upload4242962555871999882.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/Sole/upload8952695508223623024.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/indeximg/10.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/indeximg/12.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/indeximg/30.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/indeximg/34.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/indeximg/42.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/indeximg/44.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/indeximg/65.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/indeximg/upload1217975429496973514.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/gonglve/indeximg/upload4667105372313353335.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/hotel/00007549.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/hotel/00007JkQ.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/hotel/0003PP45.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/hotel/indeximg/beifangguoji.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/hotel/indeximg/kaziguoji.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/hotel/indeximg/yibisi.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/resources/img/04.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/bingxue.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/bxdsj2.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/bxdsj3.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/bxdsj4.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/indeximg/bxdsj.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/indeximg/sfy.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/indeximg/zydj.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/sfy1.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/sfy2.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/sheng.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/zhongyang.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/zhongyangdajie02.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spot/zydj1.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/Sole/upload5140538506314154143.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/Sole/upload5252820699175547365.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/Sole/upload7094028587460830104.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/Sole/upload7439396681402037491.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/indeximg/upload1291891896955135155.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/indeximg/upload2401462252012261147.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/indeximg/upload2739898308907132615.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/indeximg/upload4230849049128545690.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/indeximg/upload6649761396466600643.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/indeximg/upload7033636958372164940.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/indeximg/upload7530654522415552259.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/indeximg/upload7963719347076818000.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/travel/indeximg/upload816808557855132627.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/user/avatar/a1.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/user/avatar/a2.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/user/avatar/a3.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/user/avatar/a4.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/user/avatar/a5.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/user/avatar/a6.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/user/avatar/a7.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/user/avatar/a8.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/user/avatar/a9.jpeg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-core/target/classes/cn/edu/hlju/tour/core/impl/SpotServiceImpl.class" afterPath="$PROJECT_DIR$/tour-core/target/classes/cn/edu/hlju/tour/core/impl/SpotServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/target/classes/cn/edu/hlju/tour/web/controller/SpotController.class" afterPath="$PROJECT_DIR$/tour-web/target/classes/cn/edu/hlju/tour/web/controller/SpotController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/WEB-INF/classes/cn/edu/hlju/tour/web/controller/SpotController.class" afterPath="$PROJECT_DIR$/tour-web/target/tour-web/WEB-INF/classes/cn/edu/hlju/tour/web/controller/SpotController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/WEB-INF/lib/tour-core-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tour-web/target/tour-web/WEB-INF/lib/tour-core-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/WEB-INF/lib/tour-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tour-web/target/tour-web/WEB-INF/lib/tour-dao-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/PathServiceImpl.java" afterPath="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/PathServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/SpotService.java" afterPath="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/SpotService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/SpotServiceImpl.java" afterPath="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/SpotServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-manage/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/tour-manage/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/roomType.jsp" afterPath="$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/roomType.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/changelog.txt" afterPath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/changelog.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/demo/accordion.html" afterPath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/demo/accordion.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/demo/calendar.html" afterPath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/demo/calendar.html" />
@@ -170,6 +234,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/themes/gray/validatebox.css" afterPath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/themes/gray/validatebox.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/themes/gray/window.css" afterPath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/themes/gray/window.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/themes/icon.css" afterPath="$PROJECT_DIR$/tour-manage/src/main/webapp/resources/js/jquery-easyui-1.2.6/themes/icon.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/SpotController.java" afterPath="$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/SpotController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/tour-web/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/src/main/webapp/nav.jsp" afterPath="$PROJECT_DIR$/tour-web/src/main/webapp/nav.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/src/main/webapp/resources/css/nav.css" afterPath="$PROJECT_DIR$/tour-web/src/main/webapp/resources/css/nav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/src/main/webapp/spots.jsp" afterPath="$PROJECT_DIR$/tour-web/src/main/webapp/spots.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/index.jsp" afterPath="$PROJECT_DIR$/tour-web/target/tour-web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/nav.jsp" afterPath="$PROJECT_DIR$/tour-web/target/tour-web/nav.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/resources/css/nav.css" afterPath="$PROJECT_DIR$/tour-web/target/tour-web/resources/css/nav.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tour-web/target/tour-web/spots.jsp" afterPath="$PROJECT_DIR$/tour-web/target/tour-web/spots.jsp" />
     </list>
     <ignored path="tour.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -205,7 +278,33 @@
     <favorites_list name="tour" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="roomType.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/roomType.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="302" column="34" selection-start-line="302" selection-start-column="34" selection-end-line="302" selection-end-column="34" />
+              <folding>
+                <marker date="1494846795000" expanded="true" signature="3373:3415" placeholder="..." />
+                <marker date="1494846795000" expanded="true" signature="3395:3415" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spot.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/spot.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+              <folding>
+                <marker date="1494163574000" expanded="true" signature="3758:3800" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -234,7 +333,7 @@
     <setting file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/HotelServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/tour-common/src/main/java/cn/edu/hlju/tour/common/utils/UploadUtils.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/utils/GraphInit.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/tour-web/src/main/webapp/index.jsp" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/tour-web/src/main/webapp/index.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tour-web/src/main/webapp/hotels.jsp" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/TravelController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/tour-web/src/main/webapp/travels.jsp" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
@@ -250,12 +349,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tour-dao/src/main/resources/mapper/HotelMapper.xml" />
-        <option value="$PROJECT_DIR$/tour-manage/src/main/java/cn/edu/hlju/tour/web/controller/RoomTypeController.java" />
-        <option value="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/RoomTypeService.java" />
-        <option value="$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/roomType.jsp" />
-        <option value="$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/dao/TravelMapper.java" />
-        <option value="$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/SpotController.java" />
         <option value="$PROJECT_DIR$/tour-manage/src/main/java/cn/edu/hlju/tour/web/controller/SpotController.java" />
         <option value="$PROJECT_DIR$/tour-web/src/main/webapp/writeTravel.jsp" />
         <option value="$PROJECT_DIR$/tour-web/src/main/webapp/hotels.jsp" />
@@ -281,7 +374,6 @@
         <option value="$PROJECT_DIR$/tour-common/src/main/java/cn/edu/hlju/tour/common/utils/MatrixUDG.java" />
         <option value="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/utils/Graph.java" />
         <option value="$PROJECT_DIR$/tour-web/src/main/resources/spring/spring-datasource.xml" />
-        <option value="$PROJECT_DIR$/tour-web/src/main/webapp/nav.jsp" />
         <option value="$PROJECT_DIR$/tour-web/src/main/resources/config/mail.properties" />
         <option value="$PROJECT_DIR$/tour-manage/src/main/java/cn/edu/hlju/tour/web/controller/UserController.java" />
         <option value="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/UserServiceImpl.java" />
@@ -291,16 +383,23 @@
         <option value="$PROJECT_DIR$/tour-dao/src/main/resources/mapper/TravelMapper.xml" />
         <option value="$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/PathController.java" />
         <option value="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/utils/GraphInit.java" />
-        <option value="$PROJECT_DIR$/tour-manage/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/PathService.java" />
         <option value="$PROJECT_DIR$/tour-dao/src/main/resources/mapper/PathMapper.xml" />
         <option value="$PROJECT_DIR$/tour-web/src/test/java/Test.java" />
         <option value="$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/entity/Path.java" />
-        <option value="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/SpotServiceImpl.java" />
         <option value="$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/dao/PathMapper.java" />
         <option value="$PROJECT_DIR$/tour-manage/src/main/java/cn/edu/hlju/tour/web/controller/PathController.java" />
         <option value="$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/path.jsp" />
         <option value="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/PathServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/SpotService.java" />
+        <option value="$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/SpotController.java" />
+        <option value="$PROJECT_DIR$/tour-web/src/main/webapp/spots.jsp" />
+        <option value="$PROJECT_DIR$/tour-web/src/main/webapp/nav.jsp" />
+        <option value="$PROJECT_DIR$/tour-web/src/main/webapp/resources/css/nav.css" />
+        <option value="$PROJECT_DIR$/tour-web/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/SpotServiceImpl.java" />
+        <option value="$PROJECT_DIR$/tour-manage/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/roomType.jsp" />
       </list>
     </option>
   </component>
@@ -333,9 +432,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="773" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -362,108 +460,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="tour" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tour-core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -483,14 +487,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Sole/Documents/workspace/tour/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/TravelServiceImpl.java" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tour-web/src/main/webapp/WEB-INF/jsp" />
+      <recent name="$PROJECT_DIR$/tour-service/src/main/resources/ftl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tour-manage/src/main/webapp/resources" />
       <recent name="$PROJECT_DIR$/tour-web/src/main/webapp/resources/img" />
+      <recent name="$PROJECT_DIR$/tour-manage/src/main/webapp/resources" />
       <recent name="$PROJECT_DIR$/tour-web/target/tour-web/user/avatar" />
       <recent name="$PROJECT_DIR$/tour-web/target/tour-web/hotel" />
       <recent name="$PROJECT_DIR$/tour-web/target/tour-web/hotel/indeximg" />
@@ -502,9 +508,8 @@
       <recent name="cn.edu.hlju.tour.entity" />
       <recent name="cn.edu.hlju.tour.common.utils" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tour-web/src/main/webapp/WEB-INF/jsp" />
-      <recent name="$PROJECT_DIR$/tour-service/src/main/resources/ftl" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat-manage">
@@ -526,48 +531,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="tour-common" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="tour-web" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="tour-web" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -1155,18 +1118,14 @@
         </option>
       </method>
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat-manage" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MatrixUDG" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Test.test" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Test" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Application.MatrixUDG" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.tomcat-manage" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Test.test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MatrixUDG" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.MatrixUDG" />
       </list>
     </recent_temporary>
   </component>
@@ -1244,7 +1203,8 @@
       <workItem from="1494527186371" duration="190000" />
       <workItem from="1494548328361" duration="7828000" />
       <workItem from="1494681476450" duration="17065000" />
-      <workItem from="1494738806636" duration="49122000" />
+      <workItem from="1494738806636" duration="59731000" />
+      <workItem from="1494848195745" duration="2038000" />
     </task>
     <task id="LOCAL-00001" summary="trash按钮的颜色变化以及travel评论div位置">
       <created>1492175586767</created>
@@ -1456,7 +1416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494830873616</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="更新">
+      <created>1494831049703</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1494831049704</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1492,11 +1459,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="810163000" />
+    <option name="totallyTimeSpent" value="822810000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1508,19 +1475,19 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27705976" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33282444" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23053434" sideWeight="0.4951535" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4375" sideWeight="0.4951535" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25928918" sideWeight="0.48396948" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25605816" sideWeight="0.48396948" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27221325" sideWeight="0.51603055" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28432956" sideWeight="0.51167315" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3923664" sideWeight="0.49676898" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3923664" sideWeight="0.49676898" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1528,37 +1495,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37709925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1908397" sideWeight="0.5048465" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27705976" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36030534" sideWeight="0.49676898" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29007635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33282444" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23053434" sideWeight="0.4951535" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25928918" sideWeight="0.48396948" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27221325" sideWeight="0.51603055" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37709925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28432956" sideWeight="0.51167315" order="3" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1581,7 +1517,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="137" />
+      <option name="time" value="138" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1590,426 +1526,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="218" column="48" selection-start-line="218" selection-start-column="42" selection-end-line="218" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/registerSignin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="86" column="80" selection-start-line="86" selection-start-column="80" selection-end-line="86" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/nav.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="34" column="59" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="59" />
-          <folding>
-            <element signature="e#1414#1415#0" expanded="false" />
-            <element signature="e#1463#1464#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/resources/mapper/MessageMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding>
-            <marker date="1494065628000" expanded="true" signature="1534:1665" placeholder="select from message" />
-            <marker date="1494065628000" expanded="true" signature="1784:1896" placeholder="select from message" />
-            <marker date="1494065628000" expanded="true" signature="1987:2047" placeholder="delete from " />
-            <marker date="1494065628000" expanded="true" signature="2143:2448" placeholder="insert into message... " />
-            <marker date="1494065628000" expanded="true" signature="4087:4822" placeholder="update messa... " />
-            <marker date="1494065628000" expanded="true" signature="4926:5230" placeholder="update messa... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/dao/MessageMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/resources/mapper/HotelCommentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-          <folding>
-            <marker date="1494177280000" expanded="true" signature="2376:2519" placeholder="select from hotel_comment" />
-            <marker date="1494177280000" expanded="true" signature="2637:2755" placeholder="select from hotel_comment" />
-            <marker date="1494177280000" expanded="true" signature="2842:2904" placeholder="delete from " />
-            <marker date="1494177280000" expanded="true" signature="2999:3224" placeholder="insert into hotel_comment... " />
-            <marker date="1494177280000" expanded="true" signature="4529:5061" placeholder="update hotel... " />
-            <marker date="1494177280000" expanded="true" signature="5170:5402" placeholder="update hotel... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/dao/HotelCommentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/resources/mapper/SpotCommentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding>
-            <marker date="1494172140000" expanded="true" signature="2328:2469" placeholder="select from spot_comment" />
-            <marker date="1494172140000" expanded="true" signature="2587:2704" placeholder="select from spot_comment" />
-            <marker date="1494172140000" expanded="true" signature="2792:2853" placeholder="delete from " />
-            <marker date="1494172140000" expanded="true" signature="2947:3169" placeholder="insert into spot_comment... " />
-            <marker date="1494172140000" expanded="true" signature="4465:4993" placeholder="update spot_... " />
-            <marker date="1494172140000" expanded="true" signature="5101:5330" placeholder="update spot_... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/dao/SpotCommentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/dao/TravelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/resources/mapper/TravelCommentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="20" column="53" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="53" />
-          <folding>
-            <marker date="1494078815000" expanded="true" signature="1264:1337" placeholder="delete from " />
-            <marker date="1494078815000" expanded="true" signature="1460:1605" placeholder="select from travel_comment" />
-            <marker date="1494078815000" expanded="true" signature="1723:1842" placeholder="select from travel_comment" />
-            <marker date="1494078815000" expanded="true" signature="1933:2000" placeholder="delete from " />
-            <marker date="1494078815000" expanded="true" signature="2102:2394" placeholder="insert into travel_comment... " />
-            <marker date="1494078815000" expanded="true" signature="3896:4548" placeholder="update trave... " />
-            <marker date="1494078815000" expanded="true" signature="4658:4940" placeholder="update trave... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/dao/TravelCommentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/java/cn/edu/hlju/tour/web/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="238" column="14" selection-start-line="238" selection-start-column="14" selection-end-line="238" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="4" column="109946" selection-start-line="4" selection-start-column="109946" selection-end-line="4" selection-end-column="109946" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/TravelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/SpotController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="67" column="38" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/destination.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="273" column="19" selection-start-line="273" selection-start-column="19" selection-end-line="273" selection-end-column="19" />
-          <folding>
-            <element signature="e#7347#8239#0#HTML" expanded="false" />
-            <element signature="e#8313#8633#0#HTML" expanded="false" />
-            <element signature="e#8719#9089#0#HTML" expanded="false" />
-            <element signature="e#9193#10152#0#HTML" expanded="false" />
-            <element signature="e#10250#11454#0#HTML" expanded="false" />
-            <element signature="e#11529#12313#0#HTML" expanded="false" />
-            <element signature="e#12393#13400#0#HTML" expanded="false" />
-            <element signature="e#13498#13813#0#HTML" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="508" column="116" selection-start-line="508" selection-start-column="63" selection-end-line="508" selection-end-column="116" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1493322859000" expanded="true" signature="10999:11010" placeholder="..." />
-            <marker date="1493322859000" expanded="true" signature="11091:11103" placeholder="..." />
-            <marker date="1493322859000" expanded="true" signature="11415:11426" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/PathService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/dao/PathMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
-          <folding>
-            <marker date="1494780169000" expanded="true" signature="1950:2165" placeholder="select from user" />
-            <marker date="1494780169000" expanded="true" signature="2280:2396" placeholder="select from user" />
-            <marker date="1494780169000" expanded="true" signature="2460:2664" placeholder="update user " />
-            <marker date="1494780169000" expanded="true" signature="2782:2891" placeholder="select from user" />
-            <marker date="1494780169000" expanded="true" signature="2979:3032" placeholder="delete from " />
-            <marker date="1494780169000" expanded="true" signature="3119:3424" placeholder="insert into user... " />
-            <marker date="1494780169000" expanded="true" signature="5076:5825" placeholder="update user " />
-            <marker date="1494780169000" expanded="true" signature="5927:6239" placeholder="update user " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/resources/mapper/TravelMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
-          <folding>
-            <marker date="1494780191000" expanded="true" signature="1902:1977" placeholder="select id fr... travel" />
-            <marker date="1494780191000" expanded="true" signature="2352:2517" placeholder="select , fro... " />
-            <marker date="1494780191000" expanded="true" signature="2636:2818" placeholder="select , fro... " />
-            <marker date="1494780191000" expanded="true" signature="2945:3163" placeholder="select , fro... " />
-            <marker date="1494780191000" expanded="true" signature="3239:3307" placeholder="select count... travel" />
-            <marker date="1494780191000" expanded="true" signature="3391:3495" placeholder="select count... travel" />
-            <marker date="1494780191000" expanded="true" signature="5879:5936" placeholder="delete from " />
-            <marker date="1494780191000" expanded="true" signature="6033:6374" placeholder="insert into travel... " />
-            <marker date="1494780191000" expanded="true" signature="8250:9093" placeholder="update trave... " />
-            <marker date="1494780191000" expanded="true" signature="9209:9576" placeholder="update trave... " />
-            <marker date="1494780191000" expanded="true" signature="9683:10009" placeholder="update trave... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/SpotService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/resources/mapper/SpotImgMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494168064000" expanded="true" signature="1242:1355" placeholder="select from spot_img" />
-            <marker date="1494168064000" expanded="true" signature="1919:2037" placeholder="select from spot_img" />
-            <marker date="1494168064000" expanded="true" signature="2125:2182" placeholder="delete from " />
-            <marker date="1494168064000" expanded="true" signature="2272:2412" placeholder="insert into spot_img... " />
-            <marker date="1494168064000" expanded="true" signature="3322:3618" placeholder="update spot_... " />
-            <marker date="1494168064000" expanded="true" signature="3722:3855" placeholder="update spot_... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-dao/src/main/resources/mapper/SpotMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <marker date="1494134275000" expanded="true" signature="1967:2035" placeholder="select from spot" />
-            <marker date="1494134275000" expanded="true" signature="2153:2262" placeholder="select from spot" />
-            <marker date="1494134275000" expanded="true" signature="2380:2503" placeholder="select from spot" />
-            <marker date="1494134275000" expanded="true" signature="2591:2644" placeholder="delete from " />
-            <marker date="1494134275000" expanded="true" signature="2732:3187" placeholder="insert into spot... " />
-            <marker date="1494134275000" expanded="true" signature="5470:6615" placeholder="update spot " />
-            <marker date="1494134275000" expanded="true" signature="6716:7203" placeholder="update spot " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/utils/MailConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="e#665#666#0" expanded="false" />
-            <element signature="e#702#703#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/utils/GraphInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/java/cn/edu/hlju/tour/web/controller/SpotController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/PathController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2164">
-          <caret line="228" column="43" selection-start-line="228" selection-start-column="43" selection-end-line="228" selection-end-column="43" />
-          <folding>
-            <marker date="1494783382000" expanded="true" signature="2353:2375" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/spot.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <marker date="1494163574000" expanded="true" signature="3758:3800" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/spotImg.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="34" />
-          <folding>
-            <marker date="1494167370000" expanded="true" signature="2939:2980" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/roomType.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="278" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/net/PlainSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tour-dao/src/main/java/cn/edu/hlju/tour/entity/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2017,9 +1537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2027,7 +1544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2035,10 +1551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-          <folding>
-            <element signature="e#1057#1058#0" expanded="false" />
-            <element signature="e#1082#1083#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2056,18 +1568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-          <folding>
-            <element signature="n#insert#2;n#mapper#0;n#!!top" expanded="false" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" expanded="false" />
-            <marker date="1494828225000" expanded="true" signature="798:978" placeholder="delete from " />
-            <marker date="1494828225000" expanded="true" signature="1607:1709" placeholder="select from path" />
-            <marker date="1494828225000" expanded="true" signature="1827:1936" placeholder="select from path" />
-            <marker date="1494828225000" expanded="true" signature="2028:2085" placeholder="delete from " />
-            <marker date="1494828225000" expanded="true" signature="2179:2371" placeholder="insert into path... " />
-            <marker date="1494828225000" expanded="true" signature="2426:2498" placeholder="insert into path... " />
-            <marker date="1494828225000" expanded="true" signature="3838:4255" placeholder="update path " />
-            <marker date="1494828225000" expanded="true" signature="4356:4538" placeholder="update path " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2075,7 +1575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2083,7 +1582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2091,17 +1589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/SpotServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="150" column="24" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2109,7 +1596,224 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/js/moment.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3579">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/js/jquery.daterangepicker.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/target/tour-web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7005">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/tu-uu.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/java/cn/edu/hlju/tour/web/controller/SpotController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/css/nav.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/nav.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="124" column="47" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="464" column="96" selection-start-line="464" selection-start-column="96" selection-end-line="464" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/spots.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/SpotService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-core/src/main/java/cn/edu/hlju/tour/core/impl/SpotServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="162" column="45" selection-start-line="162" selection-start-column="45" selection-end-line="162" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/bn-reviews.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/login-img.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/nm_sprite4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/page_bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/regist-img.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/timg.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/a1.jpeg" />
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/01.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/02.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/03.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/04.jpeg" />
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/12.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/30.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/42.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-web/src/main/webapp/resources/img/44.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="21" column="99" selection-start-line="21" selection-start-column="99" selection-end-line="21" selection-end-column="99" />
+          <folding>
+            <marker date="1494844930000" expanded="true" signature="2557:2579" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-manage/target/tour-manage/spot/indeximg/upload2540870226402817817.jpg" />
+    <entry file="file://$PROJECT_DIR$/tour-manage/target/tour-manage/spot/indeximg/upload5991198798690614162.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-manage/target/tour-manage/spot/indeximg/upload3375495035816068528.jpeg" />
+    <entry file="file://$PROJECT_DIR$/tour-manage/target/tour-manage/spot/indeximg/upload850043943423110432.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-manage/target/tour-manage/spot/upload7615417390531205787.jpg" />
+    <entry file="file://$PROJECT_DIR$/tour-manage/target/tour-manage/spot/upload6544424249341211006.jpg" />
+    <entry file="file://$PROJECT_DIR$/tour-manage/target/tour-manage/spot/upload330486438050477844.jpg" />
+    <entry file="file://$PROJECT_DIR$/tour-manage/target/tour-manage/spot/upload6344782924066427827.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-manage/target/tour-manage/spot/upload6286604274660946868.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-manage/target/tour-manage/spot/upload4845089237693476525.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2805">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/spot.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+          <folding>
+            <marker date="1494163574000" expanded="true" signature="3758:3800" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tour-manage/src/main/webapp/jsp/roomType.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="302" column="34" selection-start-line="302" selection-start-column="34" selection-end-line="302" selection-end-column="34" />
+          <folding>
+            <marker date="1494846795000" expanded="true" signature="3373:3415" placeholder="..." />
+            <marker date="1494846795000" expanded="true" signature="3395:3415" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

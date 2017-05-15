@@ -14,9 +14,9 @@ import java.util.List;
  */
 public interface SpotService {
 
-    String haveSpot(String spotname);
+    String haveSpot(String spotName);
 
-    JSONObject spotByName(String spotname);
+    JSONObject spotByName(String spotName);
 
     JSONObject spotById(Long id);
 

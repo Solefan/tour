@@ -68,27 +68,28 @@
                     }, {
                         field: 'hotelName',
                         title: '酒店名称',
-                        width: 50
+                        width: 150
                     }, {
                         field: 'typeName',
                         title: '房间类型名称',
-                        width: 50
+                        width: 150
                     }, {
                         field: 'remark',
                         title: '类型介绍',
-                        width: 50
+                        width: 200
                     }, {
                         field: 'price',
                         title: '价格',
-                        width: 50
+                        width: 50,
+                        sortable: true
                     }, {
                         field: 'indexImg',
                         title: '照片',
-                        width: 50,
+                        width: 150,
                         align: 'center',
                         formatter : function(value, record, index) {
                             var str = '';
-                            str = "<img style='width:50%; height:50%; border-radius: 5%;' src='" + value + "'>";
+                            str = "<img style='width:50%; height:60px; border-radius: 5%;' src='" + value + "'>";
                             return str;
                         }
                     }

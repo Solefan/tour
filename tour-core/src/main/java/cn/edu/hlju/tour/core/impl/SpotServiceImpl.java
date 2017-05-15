@@ -43,9 +43,9 @@ public class SpotServiceImpl implements SpotService {
     private JSONObject jsonTemp;    //暂存ajax查询是否有该景点时缓存得到
 
     @Override
-    public String haveSpot(String spotname) {
+    public String haveSpot(String spotName) {
         JSONObject json = new JSONObject();
-        Spot spot = spotMapper.selectBySpotName(spotname);
+        Spot spot = spotMapper.selectBySpotName(spotName);
         if (spot == null) {
             return "spotNotExist";
         }
@@ -57,9 +57,9 @@ public class SpotServiceImpl implements SpotService {
     }
 
     @Override
-    public JSONObject spotByName(String spotname) {
+    public JSONObject spotByName(String spotName) {
         if (jsonTemp == null) {
-            this.haveSpot(spotname);
+            this.haveSpot(spotName);
         }
         return jsonTemp;
     }
@@ -152,13 +152,17 @@ public class SpotServiceImpl implements SpotService {
         List<Spot> list = this.getAllSpot();
         //添加景点
         int spotId = spotMapper.insertSelective(spot);
-        //添加路径， 初始化都不可直达
-        List<Path> listPath = new ArrayList<>();
-        for (Spot s : list) {
-            listPath.add(new Path(new Long(spotId), s.getId(), "-1"));
-            listPath.add(new Path(s.getId(), new Long(spotId), "-1"));
+
+        if (list.size() != 0) {
+            //添加路径， 初始化都不可直达
+            List<Path> listPath = new ArrayList<>();
+            for (Spot s : list) {
+                listPath.add(new Path(new Long(spotId), s.getId(), "-1"));
+                listPath.add(new Path(s.getId(), new Long(spotId), "-1"));
+            }
+            pathMapper.insertBatch(listPath);
         }
-        pathMapper.insertBatch(listPath);
+
     }
 
     /**
