@@ -201,7 +201,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public JSONObject selectUserByPage(int pageNum, int size, User user) {
-        PageHelper.startPage(pageNum, size);                     //分页
+        PageHelper.startPage(pageNum, size);                     //Mybatis分页
         List<User> list = userMapper.selectByUser(user);         //得到分页之后的用户
         PageInfo<User> pageInfo = new PageInfo(list);            //分页参数
         JSONObject json = new JSONObject();

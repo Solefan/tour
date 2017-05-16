@@ -32,7 +32,7 @@
         select
         <include refid="Base_Column_List"/>
         from message
-        where to_uid = #{id,jdbcType=BIGINT} and status = 0;
+        where to_uid = #{id,jdbcType=BIGINT} and status = 0 order by time DESC;
     </select>
 
     <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long">

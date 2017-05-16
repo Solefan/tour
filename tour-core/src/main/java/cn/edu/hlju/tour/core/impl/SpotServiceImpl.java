@@ -151,7 +151,8 @@ public class SpotServiceImpl implements SpotService {
     public void addSpot(Spot spot) {
         List<Spot> list = this.getAllSpot();
         //添加景点
-        Long spotId = spotMapper.insertSelective(spot);
+        spotMapper.insertSelective(spot);
+        Long spotId = spot.getId();
 
         if (list.size() != 0) {
             //添加路径， 初始化都不可直达

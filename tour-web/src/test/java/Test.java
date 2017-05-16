@@ -1,10 +1,7 @@
-import cn.edu.hlju.tour.dao.PathMapper;
-import cn.edu.hlju.tour.entity.Path;
+import cn.edu.hlju.tour.core.SpotService;
+import cn.edu.hlju.tour.entity.Spot;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Sole on 2017/3/31.
@@ -16,14 +13,21 @@ public class Test {
         ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring/spring-application.xml");
 
         // 从spring容器中获取mapper代理对象
-        PathMapper pathMapper = context.getBean(PathMapper.class);
+        SpotService s = context.getBean(SpotService.class);
 
-        List<Path> list = new ArrayList<>();
-        list.add(new Path(10L, 11L, "1"));
-        list.add(new Path(10L, 12L, "1"));
-        list.add(new Path(10L, 13L, "-1"));
+        Spot spot = new Spot();
+        spot.setIndexImg("");
+        spot.setCoordinate("");
+        spot.setLocation("");
+        spot.setOpenTime("");
+        spot.setTraffic("");
+        spot.setSpendTime("");
+        spot.setSpotIntroduce("");
+        spot.setSpotName("");
+        spot.setTicket("");
 
-        pathMapper.insertBatch(list);
+        s.addSpot(spot);
+
 
     }
 

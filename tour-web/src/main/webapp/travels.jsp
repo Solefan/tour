@@ -169,8 +169,9 @@
          * 景点查询游记按钮的点击事件
          */
         function spotBtnClick() {
-            $('#spotbtn').click(function () {
+            $('#spotBtn').click(function () {
                 if (validateSpot()) {
+                    var spotname = $.trim($('#spotname').val());
                     $.ajax({
                         type: "POST",
                         url: "/tour/travels",
@@ -194,7 +195,7 @@
                 return;
             }
             if (data.status == "travelNotExist") {
-                $('.tip').html("客官，该景点暂时还没有游记，添加一个吧");
+                $('.tip').html("客官，该景点暂时还没有游记");
                 $('#modal').modal('show');
                 return;
             }
@@ -326,11 +327,11 @@
 <div class="addr-search container">
     <div class="row">
         <div class="form-group col-lg-4">
-            <input type="text" class="form-control" id="spotname" placeholder="景点" name="spotname"/>
+            <input type="text" class="form-control" id="spotname" placeholder="出行目的地" name="spotname"/>
             <input type="hidden" class="form-control" id="querySpotName" name="querySpotName" value=""/>
         </div>
 
-        <button id="spotbtn" type="button" class="btn btn-warning btn-style">
+        <button id="spotBtn" type="button" class="btn btn-warning btn-style">
             <span class="glyphicon glyphicon-search"></span>
         </button>
     </div>

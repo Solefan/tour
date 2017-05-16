@@ -134,19 +134,7 @@
 
             ajaxFirst();
 
-            $('#spotbtn').click(function () {
-                if (validateSpot()) {
-                    var spotname = $.trim($('#spotname').val());
-                    $.ajax({
-                        type: "POST",
-                        url: "/tour/hotels",
-                        data: {"spotname": spotname},
-                        success: function (data) {
-                            travelAsync(data);
-                        }
-                    });
-                }
-            });
+            spotBtnClick();
 
         });
 
@@ -157,7 +145,6 @@
             $('.head-nav').find('div').removeClass('head-nav-active');
             $('.head-nav').find('.head-nav-hotel').addClass('head-nav-active');
         }
-
 
         /**
          * 获取全部hotel
@@ -172,7 +159,6 @@
                 }
             });
         }
-
 
         /**
          * 添加酒店列表
@@ -210,6 +196,57 @@
             $('.hotel-content').append(comment);
         }
 
+        /**
+         * 景点查询酒店按钮的点击事件
+         */
+        function spotBtnClick() {
+            $('#spotBtn').click(function () {
+                if (validateSpot()) {
+                    var spotname = $.trim($('#spotname').val());
+                    $.ajax({
+                        type: "POST",
+                        url: "/tour/hotels",
+                        data: {"spotname": spotname},
+                        success: function (data) {
+                            travelAsync(data);
+                        }
+                    });
+                }
+            });
+        }
+
+        /**
+         * 景点查询游记输入验证
+         * private
+         */
+        function validateSpot() {
+            var spotname = $.trim($('#spotname').val());
+            if (spotname  == null || spotname == '') {
+                $('.tip').html("客官，请输入景点名字");
+                $('#modal').modal('show');
+                return false;
+            }
+            return true;
+        }
+
+        /**
+         * 查询酒店成功之后的回调函数
+         * private
+         */
+        function travelAsync(data) {
+            if (data.status == "spotNotExist") {
+                $('.tip').html("客官，您查询的景点不存在");
+                $('#modal').modal('show');
+                return;
+            }
+            if (data.status == "hotelNotExist") {
+                $('.tip').html("客官，该景点附近还没有酒店");
+                $('#modal').modal('show');
+                return;
+            }
+            addHotel(data);
+        }
+
     </script>
 
 </head>
@@ -221,10 +258,10 @@
 <div class="addr-search container">
     <div class="row">
         <div class="form-group col-lg-4">
-            <input type="text" class="form-control" id="spotname" placeholder="景点" name="spotname"/>
+            <input type="text" class="form-control" id="spotname" placeholder="出行目的地" name="spotname"/>
         </div>
 
-        <button id="spotbtn" type="button" class="btn btn-warning btn-style">
+        <button id="spotBtn" type="button" class="btn btn-warning btn-style">
             <span class="glyphicon glyphicon-search"></span>
         </button>
     </div>

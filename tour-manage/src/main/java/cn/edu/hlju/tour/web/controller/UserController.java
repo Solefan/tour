@@ -64,14 +64,33 @@ public class UserController {
         return "success";
     }
 
+    /**
+     * 退出
+     * @param request
+     */
+    @RequestMapping(value = "logout")
+    @ResponseBody
+    public void logout(HttpServletRequest request) {
+        request.getSession().invalidate();
+    }
+
+    /**
+     * 查询用户列表
+     * @param page 当前页
+     * @param rows 一页有多少
+     * @param user 查询的字段的封装
+     * @return
+     */
     @RequestMapping(value= "getUserList")
     @ResponseBody
     public String getUserList(int page, int rows, User user) {
 
         //{"total":10, "row":[{},{}]}
         user.setPermission(0L);
+
         JSONObject json = userService.selectUserByPage(page, rows, user);
-        PageInfo pageInfo = (PageInfo)json.get("pageinfo");
+
+        PageInfo pageInfo = (PageInfo)json.get("pageinfo");//获取分页信息
         List<User> list = (List)json.get("list");
         long total = pageInfo.getTotal();
         String str = JSON.toJSONString(list);

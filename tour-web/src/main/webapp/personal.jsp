@@ -411,29 +411,33 @@
                 inner += "<div class='empty-travel'>您还没有任何新消息哦<div>";
             } else {
                 for (var i = 0; i < data.length; i++) {
+                    var msgReply = "<div class='msg-reply'>回复</div>";
+                    if (data[i].user.permission == 1) {
+                        msgReply = "";
+                    }
                     var newDate = new Date(data[i].message.time);
                     inner += "<div class='msg-div'>" +
-                            "<div class='media'>" +
-                            "<div class='media-left'>" +
-                            "<img src='" + data[i].user.avatar + "' class='img-circle'>" +
-                            "</div>" +
-                            "<div class='media-body'>" +
-                            "<div class='msg-title'>" +
-                            "<div class='msg-from'>" + data[i].user.nick + "</div>" +
-                            "<div class='msg-close'>&times;</div>" +
-                            "<input type='hidden' class='messageid' value='" + data[i].message.id + "' />" +
-                            "<div class='msg-time'>" + newDate.toLocaleString() + "</div>" +
-                            "</div>" +
-                            "<div class='msg-content'>" + data[i].message.content + "</div>" +
-                            "<div class='msg-reply'>回复</div>" +
-                            "</div>" +
-                            "<div class='msg-reply-div'>" +
-                            "<input class='touid' type='hidden' value='" + data[i].message.fromUid + "' />" +
-                            "<textarea class='form-control reply-content' rows='5' placeholder='回复 :'></textarea>" +
-                            "<input type='button' class='btn btn-style btn-warning btn-sm reply' value='回复'>" +
-                            "<input type='button' class='btn btn-default btn-sm cancel' value='收起'>" +
-                            "</div>" +
-                            "</div>" +
+                                "<div class='media'>" +
+                                    "<div class='media-left'>" +
+                                        "<img src='" + data[i].user.avatar + "' class='img-circle'>" +
+                                    "</div>" +
+                                    "<div class='media-body'>" +
+                                        "<div class='msg-title'>" +
+                                            "<div class='msg-from'>" + data[i].user.nick + "</div>" +
+                                            "<div class='msg-close'>&times;</div>" +
+                                            "<input type='hidden' class='messageid' value='" + data[i].message.id + "' />" +
+                                            "<div class='msg-time'>" + newDate.toLocaleString() + "</div>" +
+                                        "</div>" +
+                                        "<div class='msg-content'>" + data[i].message.content + "</div>" +
+                                        msgReply +
+                                    "</div>" +
+                                    "<div class='msg-reply-div'>" +
+                                        "<input class='touid' type='hidden' value='" + data[i].message.fromUid + "' />" +
+                                        "<textarea class='form-control reply-content' rows='5' placeholder='回复 :'></textarea>" +
+                                        "<input type='button' class='btn btn-style btn-warning btn-sm reply' value='回复'>" +
+                                        "<input type='button' class='btn btn-default btn-sm cancel' value='收起'>" +
+                                    "</div>" +
+                                "</div>" +
                             "</div>";
                 }
             }

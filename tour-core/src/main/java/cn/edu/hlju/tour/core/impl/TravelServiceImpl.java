@@ -147,8 +147,8 @@ public class TravelServiceImpl implements TravelService {
     @Override
     public Map uploadTravelImg(MultipartFile file, HttpServletRequest request) throws IOException {
         User user = (User)request.getSession().getAttribute("user");
-        String nick = user.getNick();
-        String contextPath = UploadUtils.uploadFile(file, request, "travel/" + nick + "/");
+        String email = user.getEmail();
+        String contextPath = UploadUtils.uploadFile(file, request, "travel/" + email + "/");
         Map<String, String> map = new HashMap<>();
         map.put("src", contextPath);
         return map;

@@ -73,7 +73,11 @@
     #{openTime,jdbcType=VARCHAR}, #{location,jdbcType=VARCHAR}, #{coordinate,jdbcType=VARCHAR},
     #{indexImg,jdbcType=VARCHAR})
   </insert>
+
     <insert id="insertSelective" parameterType="cn.edu.hlju.tour.entity.Spot">
+        <selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
         insert into spot
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">
@@ -140,6 +144,7 @@
             </if>
         </trim>
     </insert>
+
     <update id="updateByPrimaryKeySelective" parameterType="cn.edu.hlju.tour.entity.Spot">
         update spot
         <set>

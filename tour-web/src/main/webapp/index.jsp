@@ -196,6 +196,7 @@
         .abstract-bottom {
             font-size: 10px;
             font-weight: 300;
+            color: #ff9d00;
         }
 
     </style>

@@ -9,7 +9,7 @@ public interface SpotMapper {
 
     int insert(Spot record);
 
-    Long insertSelective(Spot record);
+    int insertSelective(Spot record);
 
     Spot selectByPrimaryKey(Long id);
 

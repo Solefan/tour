@@ -90,7 +90,6 @@
         }
 
         function edit() {
-            flag = 'edit';
             var arr = $("#t_user").datagrid('getSelections');
             if (arr.length != 1) {
                 $.messager.show({
@@ -129,7 +128,7 @@
                 for (var i = 0; i < arr.length; i++) {
                     ids += arr[i].id + ',';
                 }
-                ids = ids.substring(0, ids.length - 1); //去掉逗号
+                ids = ids.substring(0, ids.length - 1); //去掉最后一个逗号
                 $.messager.confirm('提示信息', '确认删除？', function (r) {
                     if (r) {
                         $.ajax({
@@ -185,7 +184,7 @@
                 } else {
                     $.ajax({
                         type: 'post',
-                        url: flag == 'add' ? 'add' : '/manage/editUser',
+                        url: '/manage/editUser',
                         cache: false,
                         data: $("#myform").serialize(),
                         success: function(data) {

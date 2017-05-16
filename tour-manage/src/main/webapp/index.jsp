@@ -66,11 +66,17 @@
 
             initTab();
 
+            //初始化登录窗口
             initLoginModal();
 
+            //点击验证码图片事件
             verifyCodeImgClick();
 
+            //模态框中登录按钮点击事件
             signInClick();
+
+            //退出登录按钮点击事件
+            signOutClick();
 
         });
 
@@ -133,7 +139,7 @@
                         async: false,
                         success: function (data) {
                             if (data == "success") {
-                                $('#loginModal').window('close');
+                                window.location.href = 'http://localhost:8082/manage';
                             } else if (data == "verifyCodeError") {
                                 $('#tip-content').html('验证码错误');
                                 $('#verifyCodeImg').click();
@@ -166,6 +172,22 @@
             return true;
         }
 
+        /**
+         * 点击退出时回到主页面
+         */
+        function signOutClick() {
+            $('#signOut').click(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "/manage/logout",
+                    async: false,
+                    success: function (data) {
+                        window.location.href = 'http://localhost:8082/manage';
+                    }
+                });
+            });
+        }
+
     </script>
 
 </head>
@@ -175,7 +197,12 @@
 <div class="easyui-layout" fit=true style="width:100%;height:100%">
 
     <div region="north" title="后台管理系统"  split="false" style="height:100px;">
-
+        <div style="float: right; margin-top:40px; margin-right: 20px">
+            您好！ ${user.nick}
+            <a href="javascript:void(0);" class="easyui-linkbutton" id="signOut">
+                <span>退出</span>
+            </a>
+        </div>
     </div>
 
     <div region="west" iconCls="icon-ok" split="false" title="导航菜单" style="width:200px">
@@ -255,36 +282,40 @@
 
 </div>
 
-<%--<div id="loginModal" class="easyui-window">--%>
+<c:choose>
+    <c:when test="${user == null}">
+        <div id="loginModal" class="easyui-window">
 
-    <%--<form id="form">--%>
+            <form id="form">
 
-    <%--<div id="tipDiv">--%>
-        <%--<span id="tip-content"></span>--%>
-    <%--</div>--%>
+            <div id="tipDiv">
+                <span id="tip-content"></span>
+            </div>
 
-    <%--<div style="margin-bottom:10px">--%>
-        <%--<input id="email" name="email" type="text" placeholder="登录邮箱" />--%>
-    <%--</div>--%>
+            <div style="margin-bottom:10px">
+                <input id="email" name="email" type="text" placeholder="登录邮箱" />
+            </div>
 
-    <%--<div style="margin-bottom:10px">--%>
-        <%--<input id="password" name="password" type="password" placeholder="密码" />--%>
-    <%--</div>--%>
+            <div style="margin-bottom:10px">
+                <input id="password" name="password" type="password" placeholder="密码" />
+            </div>
 
-    <%--<div style="margin-bottom:10px;">--%>
-        <%--<input type="text" id="verifyCode" placeholder="验证码" name="verifyCode" />--%>
-        <%--<img id="verifyCodeImg" src="verifyCode" />--%>
-    <%--</div>--%>
+            <div style="margin-bottom:10px;">
+                <input type="text" id="verifyCode" placeholder="验证码" name="verifyCode" />
+                <img id="verifyCodeImg" src="verifyCode" />
+            </div>
 
-    <%--</form>--%>
+            </form>
 
-    <%--<div style="float: right">--%>
-        <%--<a href="javascript:void(0);" class="easyui-linkbutton" id="signIn">--%>
-            <%--<span>登录</span>--%>
-        <%--</a>--%>
-    <%--</div>--%>
+            <div style="float: right">
+                <a href="javascript:void(0);" class="easyui-linkbutton" id="signIn">
+                    <span>登录</span>
+                </a>
+            </div>
 
-<%--</div>--%>
+        </div>
+    </c:when>
+</c:choose>
 
 </body>
 
