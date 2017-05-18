@@ -117,7 +117,7 @@ public class HotelServiceImpl implements HotelService {
     @Override
     public JSONObject selectHotelByPage(int pageNum, int size, Hotel hotel) {
         PageHelper.startPage(pageNum, size);                        //分页
-        List<Hotel> list = hotelMapper.selectByHotel(hotel);        //得到分页之后的用户
+        List<Hotel> list = hotelMapper.selectByHotel(hotel);        //得到分页之后的酒店
         PageInfo<Hotel> pageInfo = new PageInfo(list);              //分页参数
         JSONObject json = new JSONObject();
         json.put("pageinfo", pageInfo);

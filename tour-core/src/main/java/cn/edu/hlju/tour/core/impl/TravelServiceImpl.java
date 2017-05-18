@@ -297,6 +297,7 @@ public class TravelServiceImpl implements TravelService {
      * @param travel
      */
     @Override
+    @Transactional
     public void audit(String type, String opinion, Travel travel, HttpServletRequest request) {
         StringBuilder content = new StringBuilder();        //消息内容
         if ("pass".equals(type)) {

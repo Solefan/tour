@@ -71,7 +71,7 @@ public class UserController {
     @RequestMapping(value = "logout")
     @ResponseBody
     public void logout(HttpServletRequest request) {
-        request.getSession().invalidate();
+        request.getSession().invalidate();  //清空session
     }
 
     /**

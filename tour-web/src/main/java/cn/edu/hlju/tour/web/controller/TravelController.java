@@ -126,12 +126,17 @@ public class TravelController {
         return travelService.getTravelComment(id, Integer.parseInt(pageNum), Integer.parseInt(size));
     }
 
+    /**
+     * 添加评论
+     */
     @RequestMapping(value = "addTravelComment")
     @ResponseBody
     public void saveComment(TravelComment comment, HttpServletRequest request) {
         travelService.saveComment(comment, request);
     }
-
+    /**
+     * 删除评论
+     */
     @RequestMapping(value = "delTravelComment")
     @ResponseBody
     public void delComment(Long id) {

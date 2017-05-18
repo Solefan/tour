@@ -274,7 +274,7 @@
 
     <div region="center" style="padding:0px;">
         <div id="tabs" class="easyui-tabs" fit=true >
-            <div title="欢迎" closable=true >
+            <div title="欢迎" closable="true" >
                 <img src="resources/img/welcome.gif" style="width:100%; height:100%" />
             </div>
         </div>

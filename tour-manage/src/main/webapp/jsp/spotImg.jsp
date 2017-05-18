@@ -100,7 +100,7 @@
             });
         }
 
-        // 加载所有景点
+        // 加载所有景点    模态窗口
         function initAllSpot() {
             $('#spotId').empty();
             $.ajax({

@@ -16,8 +16,8 @@ import java.util.*;
 public class GraphInit {
 
     private static Graph GRAPH = new Graph();
-    private static int[][] PATH;
-    private static int[][] DIST;
+    private static int[][] PATH;    //前驱
+    private static int[][] DIST;    //路径距离
     private static Map<Long, Integer> MAP = new HashMap<>();
 
     @Autowired
