@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Properties;
 
 /**
- * Created by Sole on 2017/3/1.
+ * Created by lft on 2017/3/1.
  */
 public class MailUtils {
 

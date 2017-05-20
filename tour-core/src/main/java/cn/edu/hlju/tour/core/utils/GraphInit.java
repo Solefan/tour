@@ -125,7 +125,7 @@ public class GraphInit {
         }
 
     }
-
+//获取景点路径
     public List<Spot> getPath(Long fromSid, Long toSid) {
 
         List<Spot> list = new ArrayList<>();      //存经过的各个景点

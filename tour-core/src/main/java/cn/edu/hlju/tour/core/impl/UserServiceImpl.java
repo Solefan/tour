@@ -228,6 +228,9 @@ public class UserServiceImpl implements UserService {
         for (long id : ids) {
             //用户游记
             Long[] travelIds = travelMapper.selectByUserId(id);
+            if (travelIds == null || travelIds.length == 0) {
+                continue;
+            }
             //删除游记的评论
             travelCommentMapper.delByTravelId(travelIds);
             //删除该用户对其他游记的评论

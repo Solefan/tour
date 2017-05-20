@@ -569,8 +569,8 @@
                 map: map//创建时直接赋予map属性
             });
             AMap.plugin(['AMap.ToolBar', 'AMap.Scale'], function () {
-                map.addControl(new AMap.ToolBar());
-                map.addControl(new AMap.Scale());
+                map.addControl(new AMap.ToolBar());//上下左右
+                map.addControl(new AMap.Scale());//定位当前位置
             });
         </script>
 
